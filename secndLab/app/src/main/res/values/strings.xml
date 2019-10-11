@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QuestionAndAnswerApp</string>
+    <string name="question_message">Enter a question</string>
+    <string name="button_send">Ok</string>
+    <string name="answer_message">Enter answer</string>
+    <string name="send_answer">Ok</string>
+    <string name="answer_view">answer</string>
+    <string name="land_layout_view">Land Layout</string>
+</resources>

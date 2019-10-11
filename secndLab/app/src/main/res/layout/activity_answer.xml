@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnswerActivity">
+
+    <Button
+        android:id="@+id/button2"
+
+        android:layout_alignTop="@+id/editText2"
+        style="@style/ButtonOK"
+        android:layout_toEndOf="@+id/editText2"
+        android:layout_toRightOf="@+id/editText2"
+        android:onClick="sendAnswer"
+        android:text="@string/send_answer" />
+
+    <EditText
+        android:id="@+id/editText2"
+        style="@style/EditText"
+        android:hint="@string/answer_message"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editText2"
+        android:text=""
+        style="@style/ViewText"
+        />
+
+</RelativeLayout>
