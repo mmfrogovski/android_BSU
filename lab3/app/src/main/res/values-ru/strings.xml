@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ПриложениеВопросовОтветов</string>
+    <string name="question_message">Введите вопрос</string>
+    <string name="button_send">Ок</string>
+    <string name="answer_message">Введите ответ</string>
+    <string name="send_answer">Ок</string>
+    <string name="answer_view">ответ</string>
+    <string name="land_layout_view">Горизонтальное расположение</string>
+    <string name="exit">Выход</string>
+    <string name="exit_dialog_message">Выйти?</string>
+    <string name="yes_exit">Да</string>
+    <string name="no_exit">Нет</string>
+    <string name="info">Инфо</string>
+</resources>
