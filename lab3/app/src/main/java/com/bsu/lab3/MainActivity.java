@@ -1,8 +1,10 @@
 package com.bsu.lab3;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,10 +12,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "com.bsu.questionandanswerapp.MESSAGE";
     public static final int REQUEST_CODE = 1;
+    public static final String EXIT = "com.bsu.questionandanswerapp.EXIT";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,11 +64,17 @@ public class MainActivity extends AppCompatActivity {
         sendQuestion(v);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
+        EditText enterQuestion = findViewById(R.id.editText);
+        enterQuestion.setText("");
         if (requestCode == REQUEST_CODE) {
             if (resultCode == RESULT_OK) {
+                if(intent.getStringExtra(EXIT)!=null){
+                    finishAndRemoveTask();
+                }
                 TextView answerText = findViewById(R.id.textView);
                 String answer = intent.getStringExtra(AnswerActivity.EXTRA_ANSWER);
                 answerText.setText(answer);
