@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PrimeNumbersApplication</string>
+    <string name="getPrimeNumbersButton">get prime numbers</string>
+    <string name="number">enter number</string>
+    <string name="prime_numbers_count">number of prime numbers</string>
+
+</resources>
