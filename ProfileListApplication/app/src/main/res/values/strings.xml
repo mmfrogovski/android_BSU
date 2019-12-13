@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProfileListApplication</string>
+    <string name="users">Users</string>
+    <string name="add_person">Add person</string>
+    <string name="firstName">First name</string>
+    <string name="lastName">Last name</string>
+    <string name="age">Age</string>
+    <string name="search">Search for user</string>
+    <string name="update_user_list">Update Users list</string>
+</resources>
